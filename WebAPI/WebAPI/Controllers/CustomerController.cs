@@ -31,7 +31,7 @@ namespace WebAPI.Controllers
             return await _iCustomerService.IsCustomerNumberAlreadyExistAsync(customerNumber);
         }
 
-        [AllowAnonymous]
+        
         [Route("GetCustomers")]
         public async Task<List<Customer>> GetCustomersAsync()
         {
